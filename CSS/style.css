@@ -137,6 +137,7 @@ body{
     background-color: var(--light-hover-grey-color);
 }
 .main-holder{
+    overflow-y: scroll;
     height: 85.05vh;
     display: flex;
     flex-direction: column;
@@ -211,9 +212,47 @@ body{
 }
 .song-head{
     display: grid;
-    grid-template-columns: 0.09fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.09fr 1fr 1fr 1fr 0.2fr;
     color: var(--grey-color);
     border-bottom: 0.5px solid var(--grey-color);
+}
+.song-box{
+    display: grid;
+    grid-template-columns: 0.09fr 1fr 1fr 1fr 0.2fr;
+    margin-top: 10px;
+}
+.song-no{
+    display: flex;
+    align-items: center;
+}
+.song-img{
+    display: flex;
+    align-items: center;
+}
+.song-name{
+    margin-left:10px ;
+}
+.artist-name{
+    color: var(--grey-color);
+    font-size: 14px;
+}
+.song-album{
+    display: flex;
+    align-items: center;
+    color: var(--grey-color);
+    font-size: 14px;
+}
+.song-date{
+    display: flex;
+    align-items: center;
+    color: var(--grey-color);
+    font-size: 14px;
+}
+.song-duration{
+    display: flex;
+    align-items: center;
+    color: var(--grey-color);
+    font-size: 14px;
 }
 
 /* song info player */
