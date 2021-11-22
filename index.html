@@ -182,7 +182,6 @@
         </div>
     </div>
 </div>
-
     <div class="song-info-player">
         <div class="song-playing">
             <div class="current-song-img"><img class="current-song-img-props"src="/Assets/imgs/Joji-Nectar.png" alt=""></div>
@@ -204,7 +203,7 @@
             </button>
         </div>
         <div class="control-btn">
-            <button class="play-pause-btn"><img style="height: 16px; width: 16px; display: none;" src="https://img.icons8.com/ios-glyphs/30/000000/pause--v1.png"/><svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 gSLhUO"><path d="M4.018 14L14.41 8 4.018 2z"></path></svg></button>   
+            <button id="masterPlay" class="play-pause-btn"><img id="pauseIcon" style="height: 16px; width: 16px; display: none;" src="https://img.icons8.com/ios-glyphs/30/000000/pause--v1.png"/><svg id="playIcon" role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 gSLhUO"><path d="M4.018 14L14.41 8 4.018 2z"></path></svg></button>   
         </div>
         <div class="control-btn">
             <button class="next-song-btn">
@@ -213,7 +212,7 @@
         </div>
     </div>
         <div class="progess-bar-container">
-            <input type="range" name="song-progress" class="progress-bar" id="song-progress-bar" min="0" max="100">
+            <input type="range" name="song-progress" class="progress-bar" id="song-progress-bar" value="0" min="0" max="100">
         </div>
     </div>
     <div class="sound-controls">
@@ -225,5 +224,7 @@
         </div>
     </div>
     </div>
+    <script src="js/app.js"></script>
+    <!-- <audio src=></audio> -->
 </body>
 </html>
