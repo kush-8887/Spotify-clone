@@ -266,6 +266,9 @@ body{
     color: var(--grey-color);
     font-size: 14px;
 }
+.is-active{
+    background-color: var(--light-hover-grey-color);
+}
 
 /* song info player */
 .song-info-player{
