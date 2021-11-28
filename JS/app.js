@@ -10,13 +10,16 @@ let songs = [
 
 let songIndex = 0;
 let imageIndex = 0;
-let audioElement = new Audio("");
+let audioElement = new Audio("/Assets/songs/Song0.mp3");
+let previousSongBtn = document.querySelector('#previousSongBtn');
+let nextSongBtn = document.querySelector('#nextSongBtn');
 let masterPlay = document.querySelector('#masterPlay');
 let pauseIcon = document.querySelector('#pauseIcon');
 let playIcon = document.querySelector('#playIcon');
 let myProgressBar = document.querySelector('#song-progress-bar');
 let currentSongImg = document.querySelector('#currentSongImgChange');
 let currentSongName = document.querySelector('#currentSongName');
+let currentSongArtist = document.querySelector('#currentSongArtist');
 
 //Handle play/pause 
 masterPlay.addEventListener('click',()=>{
@@ -45,6 +48,8 @@ Array.from(document.getElementsByClassName("song-box")).forEach((element)=>{
     element.addEventListener('click',(e)=>{
         songIndex = parseInt(e.target.id);
         imageIndex = parseInt(e.target.id)
+        currentSongArtist.innerText = songs[songIndex].artistName;
+        currentSongName.innerText = songs[songIndex].songName;
         currentSongImg.src = `/Assets/imgs/Img${imageIndex}.jpg`
         audioElement.src = `/Assets/songs/Song${songIndex}.mp3`;
         audioElement.currentTime = 0;
@@ -52,4 +57,42 @@ Array.from(document.getElementsByClassName("song-box")).forEach((element)=>{
         playIcon.style.display = "none";
         audioElement.play();
     })
-})
+});
+
+nextSongBtn.addEventListener('click',()=>{
+    if(songIndex>=5 && imageIndex >=5){
+        songIndex = 0;
+        imageIndex = 0;
+    }
+    else{
+        songIndex += 1;
+        imageIndex += 1;
+    }
+    currentSongArtist.innerText = songs[songIndex].artistName;
+    currentSongName.innerText = songs[songIndex].songName;
+    currentSongImg.src = `/Assets/imgs/Img${imageIndex}.jpg`
+    audioElement.src = `/Assets/songs/Song${songIndex}.mp3`;
+    audioElement.currentTime = 0;
+    pauseIcon.style.display ="block";
+    playIcon.style.display = "none";
+    audioElement.play();
+});
+
+previousSongBtn.addEventListener('click',()=>{
+    if(songIndex<=0 && imageIndex <=0){
+        songIndex = 0;
+        imageIndex = 0;
+    }
+    else{
+        songIndex -= 1;
+        imageIndex -= 1;
+    }
+    currentSongArtist.innerText = songs[songIndex].artistName;
+    currentSongName.innerText = songs[songIndex].songName;
+    currentSongImg.src = `/Assets/imgs/Img${imageIndex}.jpg`
+    audioElement.src = `/Assets/songs/Song${songIndex}.mp3`;
+    audioElement.currentTime = 0;
+    pauseIcon.style.display ="block";
+    playIcon.style.display = "none";
+    audioElement.play();
+});

@@ -337,6 +337,7 @@ body{
     align-items: center;
 }
 .current-song-name{
+    width: 125px;
     margin-left: 10px;
 }
 .current-song-artist{
@@ -344,7 +345,7 @@ body{
     color: var(--grey-color);
 }
 .heart-holder{
-    margin-left: 40px;
+    margin-left: 0px;
 }
 .volume{
     display: flex;

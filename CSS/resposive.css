@@ -1,0 +1,333 @@
+@media (max-width:1060px) and (min-width:885px){
+    .progress-bar{
+        width: 500px;
+    }
+    .volume-bar{
+        width: 90px;
+    }
+}
+@media (max-width:884px) and (min-width:800px){
+    .progress-bar{
+        width: 370px;
+    }
+    .volume-bar{
+        width: 90px;
+    }
+}
+@media (max-width:800px) and (min-width:600px){
+    .progress-bar{
+        width: 370px;
+    }
+    .sound-controls{
+        display: none;
+    }
+    .vertical-navbar{
+        display: none;
+    }
+    .song-info-player{
+        flex-direction: column;
+        height: 17vh
+    }
+    .song-box:hover{
+        background-color: transparent;
+    }
+    .horizontal-navbar{
+        max-width: 100%;
+    }
+    .current-song-img-props{
+        display: none;
+    }
+    .current-song-artist{
+        display: none;
+    }
+    .heart-holder{
+        display: none;
+    }
+    .current-song-name{
+        width: fit-content;
+        margin: 10px 0px;
+    }
+    .song-controls{
+        margin-bottom: 20px;
+    }
+    .playlist-name{
+        font-size: 70px;
+    }
+}
+@media (max-width:600px) and (min-width:506px){
+    .root-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .progress-bar{
+        width: 370px;
+    }
+    .sound-controls{
+        display: none;
+    }
+    .vertical-navbar{
+        display: none;
+    }
+    .song-info-player{
+        flex-direction: column;
+        height: 17vh
+    }
+    .song-box:hover{
+        background-color: transparent;
+    }
+    .horizontal-navbar{
+        max-width: 100%;
+    }
+    .current-song-img-props{
+        display: none;
+    }
+    .current-song-artist{
+        display: none;
+    }
+    .heart-holder{
+        display: none;
+    }
+    .current-song-name{
+        width: fit-content;
+        margin: 10px 0px;
+    }
+    .song-controls{
+        margin-bottom: 20px;
+    }
+    .playlist-name{
+        font-size: 70px;
+    }
+    .side-buttons{
+        display: none;
+    }
+    .playlist-info{
+        flex-direction: column;
+        padding-top: 0px;
+        align-items:center;
+    }
+    .play-btns{
+        display: none;
+    }
+    .playlist-type{
+        display: none;
+    }
+    .play-btns{
+        display: none;
+    }
+    .playlist-about{
+        padding-top: 0px;
+    }
+    .playlist-author{
+        display: flex;
+        justify-content: center;
+    }
+    .song-box{
+        grid-template-columns: 1fr;
+    }
+    .song-head{
+        display: none;
+    }
+    .song-no{
+        display: none;
+    }
+    .song-album{
+        display: none;
+    }
+    .song-date{
+        display: none;
+    }
+    .duration{
+        display: none;
+    }
+    .mobile-options{
+        display: block;
+    }
+    .mobile-options{
+        display: block;
+    }
+
+}
+@media (max-width:506px) and (min-width:6px){
+    .root-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .progress-bar{
+        width: 370px;
+    }
+    .sound-controls{
+        display: none;
+    }
+    .vertical-navbar{
+        display: none;
+    }
+    .song-info-player{
+        flex-direction: column;
+        height: 17vh
+    }
+    .song-box:hover{
+        background-color: transparent;
+    }
+    .horizontal-navbar{
+        max-width: 100%;
+    }
+    .current-song-img-props{
+        display: none;
+    }
+    .current-song-artist{
+        display: none;
+    }
+    .heart-holder{
+        display: none;
+    }
+    .current-song-name{
+        width: fit-content;
+        margin: 10px 0px;
+    }
+    .song-controls{
+        margin-bottom: 20px;
+    }
+    .playlist-name{
+        font-size: 50px;
+    }
+    .side-buttons{
+        display: none;
+    }
+    .playlist-info{
+        flex-direction: column;
+        padding-top: 0px;
+        align-items:center;
+    }
+    .play-btns{
+        display: none;
+    }
+    .playlist-type{
+        display: none;
+    }
+    .play-btns{
+        display: none;
+    }
+    .playlist-about{
+        padding-top: 0px;
+    }
+    .playlist-author{
+        display: flex;
+        justify-content: center;
+    }
+    .song-box{
+        grid-template-columns: 1fr;
+    }
+    .song-head{
+        display: none;
+    }
+    .song-no{
+        display: none;
+    }
+    .song-album{
+        display: none;
+    }
+    .song-date{
+        display: none;
+    }
+    .duration{
+        display: none;
+    }
+    .mobile-options{
+        display: block;
+    }
+}
+@media (max-width:386px) and (min-width:6px){
+    .root-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .progress-bar{
+        width: 370px;
+    }
+    .sound-controls{
+        display: none;
+    }
+    .vertical-navbar{
+        display: none;
+    }
+    .song-info-player{
+        flex-direction: column;
+        height: 17vh
+    }
+    .song-box:hover{
+        background-color: transparent;
+    }
+    .horizontal-navbar{
+        max-width: 100%;
+    }
+    .current-song-img-props{
+        display: none;
+    }
+    .current-song-artist{
+        display: none;
+    }
+    .heart-holder{
+        display: none;
+    }
+    .current-song-name{
+        width: fit-content;
+        margin: 10px 0px;
+    }
+    .song-controls{
+        margin-bottom: 20px;
+    }
+    .playlist-name{
+        font-size: 50px;
+    }
+    .side-buttons{
+        display: none;
+    }
+    .playlist-info{
+        flex-direction: column;
+        padding-top: 0px;
+        align-items:center;
+    }
+    .play-btns{
+        display: none;
+    }
+    .playlist-type{
+        display: none;
+    }
+    .play-btns{
+        display: none;
+    }
+    .playlist-about{
+        padding-top: 0px;
+    }
+    .playlist-author{
+        display: flex;
+        justify-content: center;
+    }
+    .song-box{
+        grid-template-columns: 1fr;
+    }
+    .song-head{
+        display: none;
+    }
+    .song-no{
+        display: none;
+    }
+    .song-album{
+        display: none;
+    }
+    .song-date{
+        display: none;
+    }
+    .duration{
+        display: none;
+    }
+    .mobile-options{
+        display: block;
+    }
+    .playlist-name {
+        font-size: 35px;
+    }
+    .progress-bar {
+        width: 270px;
+    }
+}
