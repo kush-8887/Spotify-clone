@@ -1,16 +1,16 @@
-console.log('Kush Jaiswal');
+console.log('Writing anything here may cause webapp to misbehave');
 let songs = [
-    {songName:"SLOW DANCING IN THE DARK", filePath:"/Assets/songs/Song0.mp3",coverPath:"/Assets/imgs/Img0.jpg",artistName:"Joji"},
-    {songName:"Sanctuary", filePath:"/Assets/songs/Song1.mp3",coverPath:"/Assets/imgs/Img1.jpg",artistName:"Joji"},
-    {songName:"SAD!", filePath:"/Assets/songs/Song2.mp3",coverPath:"/Assets/imgs/Img2.jpg",artistName:"XXXTENTATION"},
-    {songName:"Marijiuana Breath", filePath:"/Assets/songs/Song3.mp3",coverPath:"/Assets/imgs/Img3.jpg",artistName:"Adam Jensen"},
-    {songName:"STAY", filePath:"/Assets/songs/Song4.mp3",coverPath:"/Assets/imgs/Img4.jpg",artistName:"The Kid LOROI,Justin Bieber"},
-    {songName:"Let Me Love You", filePath:"/Assets/songs/Song5.mp3",coverPath:"/Assets/imgs/Img5.jpeg",artistName:"The Kid LOROI,Justin Bieber"},
+    {songName:"SLOW DANCING IN THE DARK", filePath:"Assets/songs/Song0.mp3",coverPath:"Assets/imgs/Img0.jpg",artistName:"Joji"},
+    {songName:"Sanctuary", filePath:"Assets/songs/Song1.mp3",coverPath:"Assets/imgs/Img1.jpg",artistName:"Joji"},
+    {songName:"SAD!", filePath:"Assets/songs/Song2.mp3",coverPath:"Assets/imgs/Img2.jpg",artistName:"XXXTENTATION"},
+    {songName:"Marijiuana Breath", filePath:"Assets/songs/Song3.mp3",coverPath:"/Assets/imgs/Img3.jpg",artistName:"Adam Jensen"},
+    {songName:"STAY", filePath:"Assets/songs/Song4.mp3",coverPath:"Assets/imgs/Img4.jpg",artistName:"The Kid LOROI,Justin Bieber"},
+    {songName:"Let Me Love You", filePath:"Assets/songs/Song5.mp3",coverPath:"Assets/imgs/Img5.jpeg",artistName:"The Kid LOROI,Justin Bieber"},
 ]
 
 let songIndex = 0;
 let imageIndex = 0;
-let audioElement = new Audio("/Assets/songs/Song0.mp3");
+let audioElement = new Audio("Assets/songs/Song0.mp3");
 let previousSongBtn = document.querySelector('#previousSongBtn');
 let nextSongBtn = document.querySelector('#nextSongBtn');
 let masterPlay = document.querySelector('#masterPlay');
@@ -50,8 +50,8 @@ Array.from(document.getElementsByClassName("song-box")).forEach((element)=>{
         imageIndex = parseInt(e.target.id)
         currentSongArtist.innerText = songs[songIndex].artistName;
         currentSongName.innerText = songs[songIndex].songName;
-        currentSongImg.src = `/Assets/imgs/Img${imageIndex}.jpg`
-        audioElement.src = `/Assets/songs/Song${songIndex}.mp3`;
+        currentSongImg.src = `Assets/imgs/Img${imageIndex}.jpg`
+        audioElement.src = `Assets/songs/Song${songIndex}.mp3`;
         audioElement.currentTime = 0;
         pauseIcon.style.display ="block";
         playIcon.style.display = "none";
@@ -70,8 +70,8 @@ nextSongBtn.addEventListener('click',()=>{
     }
     currentSongArtist.innerText = songs[songIndex].artistName;
     currentSongName.innerText = songs[songIndex].songName;
-    currentSongImg.src = `/Assets/imgs/Img${imageIndex}.jpg`
-    audioElement.src = `/Assets/songs/Song${songIndex}.mp3`;
+    currentSongImg.src = `Assets/imgs/Img${imageIndex}.jpg`
+    audioElement.src = `Assets/songs/Song${songIndex}.mp3`;
     audioElement.currentTime = 0;
     pauseIcon.style.display ="block";
     playIcon.style.display = "none";
@@ -89,8 +89,8 @@ previousSongBtn.addEventListener('click',()=>{
     }
     currentSongArtist.innerText = songs[songIndex].artistName;
     currentSongName.innerText = songs[songIndex].songName;
-    currentSongImg.src = `/Assets/imgs/Img${imageIndex}.jpg`
-    audioElement.src = `/Assets/songs/Song${songIndex}.mp3`;
+    currentSongImg.src = `Assets/imgs/Img${imageIndex}.jpg`
+    audioElement.src = `Assets/songs/Song${songIndex}.mp3`;
     audioElement.currentTime = 0;
     pauseIcon.style.display ="block";
     playIcon.style.display = "none";
